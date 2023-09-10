@@ -49,4 +49,4 @@ jobs:
 
       - name: Deploy image to Amazon EKS
         run: |
-          kubectl rollout restart deployment server-deployment
+          kubectl rollout restart deployment reverseproxy
