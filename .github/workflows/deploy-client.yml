@@ -1,4 +1,4 @@
-name: Deploy users to production
+name: Deploy client to production
 
 on:
   pull_request:
@@ -26,7 +26,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+          aws-region: us-west-1
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
 
       - name: Login to Amazon ECR
@@ -45,7 +45,7 @@ jobs:
           docker push -a $ECR_REGISTRY/$ECR_REPOSITORY
 
       - name: Update kube config
-        run: aws eks update-kubeconfig --name project3 --region us-west-1
+        run: aws eks update-kubeconfig --name final --region us-west-1
 
       - name: Deploy image to Amazon EKS
         run: |
