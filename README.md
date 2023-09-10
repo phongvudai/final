@@ -24,3 +24,5 @@ Github action
 
 Kubectl pods
 ![image](https://github.com/phongvudai/final/assets/22408187/0a72c75a-2e14-470d-965e-c6b08da20b05)
+Cloud watch
+ ![image](https://github.com/phongvudai/final/assets/22408187/877ac032-8cea-4cbf-a02b-d16403af05c6)
