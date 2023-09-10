@@ -1,4 +1,4 @@
-name: Deploy users to production
+name: Deploy client to production
 
 on:
   pull_request:
